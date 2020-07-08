@@ -1,6 +1,6 @@
 ## Octo-Pro Installation and Configuration
 
-It is utilizing an Ansible playbook to provision the Kubernertes Master and Worker.
+It is utilizing an Ansible playbook to provision the Kubernetes Master and Worker.
 
 ### Download the Source Code
 

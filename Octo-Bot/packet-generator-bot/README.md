@@ -1,4 +1,4 @@
-## [OCTO-BOT] Packet-Generator-Bot Quick Start Guide
+## Octo-Bot: Realistic Traffic Generator Bot
 
 ### Install Dependencies
 

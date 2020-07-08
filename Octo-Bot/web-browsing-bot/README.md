@@ -1,4 +1,4 @@
-## OctoBot Preparation and Development Guide
+## Octo-Bot: Web Crawler Activity Bot
 
 ### Install Dependencies
 

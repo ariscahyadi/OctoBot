@@ -1,7 +1,9 @@
-Octobot - Orchestrator for Traffic Generator Bot
-Copyright 2019 National Cybersecurity R&D Laboratory (NCL).
+OCTOBOT - Orchestrator for Human Activity Generator Bot
+Copyright 2019 - 2020 National Cybersecurity R&D Laboratory (NCL).
 
 This product includes software developed at
 School of Computing National University of Singapore (NUS).
 
-This software contains code derived from Scrapy Framework.
+This software contains code derived from Scrapy software (https://scrapy.org)
+This software contains code derived from Selenium software (https://www.selenium.dev)
+This software contains code derived from Selenium software (https://scapy.net)
