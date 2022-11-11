@@ -23,21 +23,22 @@ public class App {
         driver.manage().window().maximize();
         driver.get("https://www.gmail.com");
         //Send email address
-        driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("User mail id");
+        driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("");
         driver.findElement(By.xpath("//div[@id='identifierNext']")).click();
 
         //send password
-        WebElement passwordButton = driver.findElement(By.xpath("//input[@name='password']"));
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.elementToBeClickable(passwordButton));
-        passwordButton.sendKeys("Password for Email");
+        WebDriverWait wait = new WebDriverWait(driver, 100);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@type='password']")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='password']")));
+        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("");
         driver.findElement(By.xpath("//div[@id='passwordNext']")).click();
 
         //Click on compose button
         driver.findElement(By.xpath("//div[text()='Compose']")).click();
 
         //Enter the sender mail id
-        driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys("Sender e-mail id");
+        //driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys("Sender e-mail id");
+        driver.findElement(By.xpath("//div[@name='to']")).sendKeys("dcsacr@nus.edu.sg");
         //Enter subject to the mail
         driver.findElement(By.xpath("//input[@name='subjectbox']")).sendKeys("Selenium script");
         driver.findElement(By.xpath("//div[@class='Am Al editable LW-avf']")).sendKeys("Selenium script to send mail");
